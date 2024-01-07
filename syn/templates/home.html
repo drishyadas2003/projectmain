@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Synnefosolutions</title>
+  </head>
+  <body>
+    
+    <a href="https://api.whatsapp.com/send?phone=+917736013410&amp;text=Hello" target="_blank" class="whatsapp-iconbtn"><i class="fab fa-whatsapp"></i></a>
+    
+    <div class="div div1">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+      
+              <a class="navbar-brand " href="#">
+                <h6 class="navclr"><b> <img src="{% static 'image/phone.png.png'%}" class="phone">+91 7736013411</b></h6></a>
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                    <a class="nav-link active px-3" id="navclr" aria-current="page" href="{% url 'blog' %}"><b>Blog</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navclr px-3" href="{% url 'carrers' %}"><b>Careers</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navclr px-3 " href="{% url 'success' %}"><b>Success stories</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link w-100"id="navcl" href="{% url 'contactus'%}"><b>Register now</b></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <li class="nav-item">
+                    </li>
+                    
+                </ul>
+              
+              </div>
+            </div>
+          </nav>
+    </div>
+
+
+
+
+
+        
+<div class="div">
+  <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container">
+
+          <img src="{% static 'image/synnefo-logo.png'%}" alt="logo">
+  
+          <ul class="nav justify-content-center">
+              <li class="nav-item ">
+                <a class="nav-link active text-secondary px-3" aria-current="page" href="{% url 'aboutus'%}"><b>About us</b></a>
+              </li>
+              <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle text-secondary px-3" href="{% url 'courses'%}" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>
+                  Courses</b>
+                </a>
+  
+                <ul class="dropdown-menu dropdown-menu-light" id="nav3" aria-labelledby="navbarDarkDropdownMenuLink">
+                  <div class="row ">
+                    <div class="col-lg-4 ">
+                      <h6 class=" px-2">Digital marketing</h6>
+                      <div class=" underline"></div>
+                  <li><a class="dropdown-item" href="{% url 'aws'%}">AWS For Absolute Beginers</a></li>
+                  <li><a class="dropdown-item" href="{% url 'compa'%}">ComTIA A+</a></li>
+                  <li><a class="dropdown-item" href="{% url 'phpfullstack'%}">PHP Fullstack</a></li>
+                  <li><a class="dropdown-item" href="{% url 'pythonfullstack'%}">Python and Django Fullstack <br> Web Development</a></li>
+                    </div>
+
+                    <div class="col-lg-4 px-3">
+                      <h6 class="">Networking</h6>
+                      <div class=" underline"></div>
+                  <li><a class="dropdown-item" href="{% url 'wsa'%}">Windows Server Administration</a></li>
+                  <li><a class="dropdown-item" href="{% url 'compnet'%}">ComTIA Network+</a></li>
+                  <li><a class="dropdown-item" href="{% url 'redhat'%}">Redhat Certified Enginer</a></li>
+                  <li><a class="dropdown-item" href="{% url 'az'%}">AZ 104 Microsoft Azure <br>Administration Exam</a></li>
+                    </div>
+
+                    <div class="col-lg-4 px-3">
+                      <h6 class="">Software</h6>
+                      <div class=" underline"></div>
+                  <li><a class="dropdown-item" href="{% url 'coursedigital'%}">Digital Marketing</a></li>
+                  <li><a class="dropdown-item" href="{% url 'vmsphere'%}">Vmware Vsphere</a></li>
+                  <li><a class="dropdown-item" href="{% url 'ciso'%}">cisco Certified Network Associate</a></li>
+                    </div>
+                  </div>
+                </ul>
+              
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-secondary px-3" href="{% url 'placements'%}"><b>placement</b></a>
+              </li>
+              <li class="nav-item">
+                <a href="{% url 'contactus'%}" class="contact px-3"><b>contact us<b></a>
+              </li>          
+          </ul>
+        
+        </div>
+      </div>
+    </nav>
+</div>
+
+
+
+    
+    <div class="div  py-5" id="div1">
+      <div class="row">
+         <div class="col-lg-2">
+           <div class="container">
+             <h6 class="socialmedia-sticky text-secondary"><b>Follow Us</b>
+                 <a href="" target="_blank"><i class="fab fa-facebook-f text-secondary"></i></a> /
+                 <a href="" target="_blank"><i class="fab fa-twitter text-secondary"></i></a> /
+                 <a href="" target="_blank"><i class="fab fa-linkedin-in text-secondary"></i></a> /
+                 <a href="" target="_blank"><i class="fab fa-instagram text-secondary"></i></a>
+             </h6>
+           </div>
+         </div>
+       </div>
+      </div>
+  
+    </div>
+
+
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-6 py-5 firstcl">
+  
+            <div  class="box-content pe-4">
+              <h1 class="heading1 pe-3">The Best<br>
+                Learning Platform</h1>
+              <p class=" para1 pe-4 py-5">Our expert trainers can help you learn bleeding-edge technologies, so you can gain  the experience you need to be successful</p>
+              <a href="" class="viewcourse-btn"><b>View Courses</b></a>
+              <div class="bannercircleanim">
+                <img   style="background-image:url('{ % static 'image/banner-circle-bg.png'%}');"  src="{% static 'image/banner-circle.png'%}"alt="circle text">
+              </div>
+              </div>
+  
+          </div>
+
+
+
+
+
+        
+       <div class="col-lg-6 secln">
+      
+        <img src="{% static 'image/banner-image.webp'%}" alt="banner" class="banner-image">
+        <img src="{% static 'image/arrow-animation.svg'%}" alt="arrow" class="arrow-animation">
+       <a href="" ><img src="{% static 'image/mouse-icon.jpg'%}" alt="mouse" class="mouse-icon"></a>
+         <div class="courses-count">
+           <img src="{% static 'image/courses-icon.jpg'%}" class="img2" alt="course">
+           <h5 class="courses50">50+<br>Courses</h5>
+       </div>
+       <div class="student-trusted">
+         <img src="{% static 'image/student-trusted.png'%}" alt="Student Trusted">
+         <h5 class=""><b>6000+<br>StudentsTrusted<b></h5>
+     </div>
+            
+
+       </div>
+
+      </div>
+    </div>
+
+    
+    <div class="container">
+        <div class="pictures py-5">
+          <div class="row">
+            <div class="col-lg-2  col-md-2">
+              <img src="{% static 'image/skill-india.jpg'%}">
+            </div>
+           
+            <div class="col-lg-2 col-md-2">
+              <img src="{% static 'image/nsdc.jpg'%}">
+            </div>
+  
+            <div class="col-lg-2  col-md-2">
+              <img src="{% static 'image/iib-education.jpg'%}">
+            </div>
+   
+            <div class="col-lg-2  col-md-2">
+              <img src="{% static 'image/pearson.jpg'%}">
+            </div>
+  
+            <div class="col-lg-2  col-md-2">
+              <img src="{% static 'image/people-cert.jpg'%}">
+            </div>
+  
+          </div>
+        </div>
+      </div>
+    
+
+       
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6 class="heading-careers text-center pt-5">Popular Courses</h6>
+          <div class="cir text-center">
+              <div id="ball1" class="circle"></div>
+              <div id="ball2" class="circle"></div>
+              <div id="ball3" class="circle"></div>
+            <div>
+        </div>
+        <div>
+
+          <div class="row">
+            <div class="col-lg-4 py-5">
+              <div class="card">
+                <img src="{% static 'image/digital-marketing.webp'%}" alt="img" style="width:100%">
+                <div class="back-each">
+                <p>Digital Marketing</p> 
+               </div>
+            </div>
+          </div>
+     
+            <div class="col-lg-4 py-5">
+              <div class="card">
+                <img src="{% static 'image/redhat.jpg'%}" alt="img" style="width:100%">
+                <div class="back-each">
+                <p>RedHat Certified Enginer</p> 
+               </div>
+            </div>
+            </div>
+
+            <div class="col-lg-4 py-5">
+              <div class="card">
+                <img src="{% static 'image/windows-server.jpg'%}" alt="img" style="width:100%">
+                <div class="back-each">
+                <p>Window Server Administration</p> 
+               </div>
+            </div>
+            </div>
+
+            <div class="but">
+              <a href="" class="exp-btn text-light"><b>Explore all courses</b></a>
+            </div>
+
+            </div>
+          </div>
+    </div>
+
+
+    <div class="div last-div">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-3 col-6 contents">
+              <img src="{% static 'image/years-icon.png'%}" alt="Years of legacy" class="year">
+              <h5 class="years">10k+ <br> Years of legacy</h5>
+              
+          </div>
+  
+          <div class="col-lg-3 col-md-3 col-6 contents">
+            <img src="{% static 'image/course-icon.png'%}" alt="Years of legacy" class="year">
+            <h5 class="years">11k+ <br> Courses</h5>
+            
+        </div>
+  
+        <div class="col-lg-3 col-md-3 col-6 contents">
+          <img src="{% static 'image/students-icon.png'%}" alt="Years of legacy" class="year">
+          <h5 class="years">3k+ <br> Students Trusted</h5>
+          
+        </div>
+  
+       <div class="col-lg-3 col-md-3 col-6 contents">
+        <img src="{% static 'image/placement-icon.png'%}" alt="Years of legacy" class="year">
+        <h5 class="years">10k+ <br> Years of legacy</h5>
+        
+        </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+           <h6 class="heading-careers text-center pt-5">Synnefo Smart Space</h6>
+            <div class="cir text-center">
+                <div id="ball1" class="circle"></div>
+                <div id="ball2" class="circle"></div>
+                <div id="ball3" class="circle"></div>
+              <div>
+                <p class="para1 text-center text-secondary">Synnefo SmartSpace is a fully flexible, ultra user-friendly solution that will erase your office pain points, reduce your
+                  building costs and empower your people.</p>
+          </div>
+
+
+
+          
+        <div class="row">
+            <div class="col-lg-4 col-md-6">
+                <div class="smartspace-item">
+                    <span><img src="https://synnefo.in/wp-content/themes/synnefo/assets/img/opensource-icon.png" alt="open source"></span>
+                    <h5>Open Source Software</h5>
+                    <p class="para1">As a group of FOSS enthusiasts, we ensure the tools we are implimenting are 100% open source.
+                        No secret code to steel your data.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 colorcode">
+                <div class="smartspace-item">
+                    <span><img src="https://synnefo.in/wp-content/themes/synnefo/assets/img/assured-security.png" alt="Assured Security"></span>
+                    <h5>Assured Security</h5>
+                    <p class="para1">As everything we implement is Open Source, we have nothing to hide. And community driven
+                        software's will get fixes fast. That assures your security.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="smartspace-item">
+                    <span><img src="https://synnefo.in/wp-content/themes/synnefo/assets/img/24support.png" alt="24 X 7 Support"></span>
+                    <h5>24 X 7 Support</h5>
+                    <p class="para1">As a group of FOSS enthusiasts, we ensure the tools we are implimenting are 100% open source.
+                        No secret code to steel your data.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 colorcode">
+                <div class="smartspace-item">
+                    <span><img src="https://synnefo.in/wp-content/themes/synnefo/assets/img/satisfied-clients.png" alt="Satistified Clients"></span>
+                    <h5>Satistified Clients</h5>
+                    <p class="para1">As we know, all that lasts is our satisfaction. That is what making us to invest our time
+                        deliver what you need, not what we already have.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="smartspace-item">
+                    <span><img src="https://synnefo.in/wp-content/themes/synnefo/assets/img/freeupdate-icon.png" alt="Free Updates"></span>
+                    <h5>Free Updates</h5>
+                    <p class="para1">Updates are pivotal to stay secure. We will make sure every single client of ours is getting
+                        all the latest updates for absolutely free. Synnefo got you covered.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 colorcode">
+                <div class="smartspace-item">
+                    <span><img src="https://synnefo.in/wp-content/themes/synnefo/assets/img/amc-icon.png" alt="amc"></span>
+                    <h5>AMC</h5>
+                    <p class="para1">we offer specially curated annual maintenance contracts, catered to individual client
+                        requirements but assuring the same successful empowerment of business growth.</p>
+                </div>
+            </div>
+        </div>
+  
+        </div>
+      </div>
+
+
+      
+    
+    <div class="div menu1">
+        <div class="container">
+          <div class="row justify-content-center">
+              <div class="col-lg-10">
+                  <div class="onlinecourse-wrapper">
+                      <div class="row  menu-back">
+                          <div class="col-lg-8 col-md-8">
+                              <h4> <img src="{% static 'image/learning-course-icon.webp'%}">Best Learning Platform </h4>
+                                <h6 class="ps-3">Study with the best certified professional teachers.</h6>
+                          </div>
+                          <div class="col-lg-4 col-md-4">
+                              <a href="https://synnefo.in/2023/05/24/devops-training-in-kochi//contact-us/" class="registerbtn ">Register Now</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="row pt-5">
+              <div class="col-lg-3 ">
+                  <img src="{% static 'image/synnefo-logo.png'%}" alt="Synnefo Logo">
+      
+              </div>
+              <div class="col-lg-3 col-md-4 ">
+                  <h3>Quick Links</h3>
+                  <div class="menu-quick-links-container">
+                    <ul id="menu-quick-links" class="menu">
+                      <li class="list py-1"><a href="{% url 'home'%}" class="menu">Home</a></li>
+                      <li class="list  py-1"><a href="{% url 'aboutus'%}" class="menu">About Us</a></li>
+                      <li class="list  py-1"><a href="{% url 'courses'%}" class="menu">Courses</a></li>
+                      <li class="list  py-1"><a href="{% url 'placements'%}" class="menu">Placements</a></li>
+                     <li class="list  py-1"><a href="{% url 'blog'%}" aria-current="page" class="menu">Blog</a></li>
+                     <li class="list  py-1"><a href="{% url 'success'%}" class="menu">Success Stories</a></li>
+                    <li class="list  py-1"><a href="{% url 'carrers'%}" class="menu">Careers</a></li>
+                   <li class="list  py-1"><a href="{% url 'contactus'%}" class="menu">Contact Us</a></li>
+                    </ul>
+                  </div>                
+                   </div>
+                   <div class="col-lg-3 col-md-4">
+                    <h3>Popular Courses</h3>
+                    <div class="menu-popular-courses-container">
+                      <ul id="menu-popular-courses">
+                        <li class="list py-1"><a href="{% url 'coursedigital'%}" class="menu">Digital Marketing</a></li>
+                       <li class="list py-1"><a href="{% url 'phpfullstack'%}"  class="menu">PHP  Full Stack</a></li>
+                       <li class="list py-1"><a href="{% url 'vmsphere'%}" class="menu">Vmware vSphere</a></li>
+                  <li class="list py-1"><a href="{% url 'ciso'%}" class="menu">Cisco Certified Network Associate</a></li>
+                 <li class="list py-1"><a href="{% url 'compa'%}" class="menu">CompTIA A+</a></li>
+              </ul>
+          </div>  
+          </div>
+              <div class="col-lg-3 col-md-4">
+                  <h3>Get in Touch</h3>
+                  <p class="list" id="para">2nd Floor, Aswathi Building Above SBI,<br>
+                      Iyyattil Junction, Ernakulam,<br>
+                      Kerala 682011</p>
+                  <p ><a href="tel:+917736013410" class="menu py-1">+91 7736013410</a></p>
+                  <p ><a href="tel:+917736013411" class="menu py-1">+91 7736013411</a></p>
+                  <p ><a href="mailto:info@synnefo.in" class="menu py-1">info@synnefo.in</a></p>
+                 
+              </div>
+          </div>
+      </div>
+      <div class="div copy-back">
+        <div class="row">
+          <div class="col-lg-8 col-md-6" >
+        <p class="px-5"> Copyright © 2023 Synnefo Solutions. All rights reserved.</p>
+          </div>
+          <div class="col-lg-4 col-md-6">
+            <p> <a href="" class=" copy-a px-5">Privacy Policy </a> <a href="" class="copy-a">Terms & Conditions </a> </p>
+          </div>
+        </div>
+      </div>
+      </div>
+
+
+    
+
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>

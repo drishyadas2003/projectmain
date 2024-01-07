@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/digitalmarketing.css'%}">
+    <title>digitalmarketing</title>
+  </head>
+  <body>
+
+    <a href="https://api.whatsapp.com/send?phone=+917736013410&amp;text=Hello" target="_blank" class="whatsapp-iconbtn"><i class="fab fa-whatsapp"></i></a>
+    <div class="div div1">
+      <nav class="navbar navbar-expand-lg navbar-light ">
+          <div class="container">
+    
+            <a class="navbar-brand " href="#">
+              <h6 class="navclr"><b> <img src="{% static 'image/phone.png.png'%}" class="phone">+91 7736013411</b></h6></a>
+          
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item ">
+                  <a class="nav-link active px-3" id="navclr" aria-current="page" href="{% url 'blog'%}"><b>Blog</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navclr px-3" href="{% url 'carrers'%}"><b>Careers</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link navclr px-3 " href="{% url 'success'%}"><b>Success stories</b></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link w-100"id="navcl" href="{% url 'contactus'%}"><b>Register now</b></a>
+                </li>
+                <li class="nav-item dropdown">
+                  <li class="nav-item">
+                  </li>
+                  
+              </ul>
+            
+            </div>
+          </div>
+        </nav>
+  </div>
+  
+  <div class="div py-4">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+  
+            <img src="{% static 'image/synnefo-logo.png' %}" alt="logo">
+    
+            <ul class="nav ">
+                <li class="nav-item ">
+                  <a class="nav-link active text-secondary px-3" aria-current="page" href="{% url 'aboutus'%}"><b>About us</b></a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle text-secondary px-3" href="{% url 'courses'%}" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>
+                    courses</b>
+                  </a>
+                 
+                  <ul class="dropdown-menu dropdown-menu-light" id="nav3" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <div class="row ">
+                      <div class="col-lg-4 ">
+                        <h6 class=" px-2">Digital marketing</h6>
+                        <div class=" underline"></div>
+                    <li><a class="dropdown-item" href="{% url 'aws'%}">AWS For Absolute Beginers</a></li>
+                    <li><a class="dropdown-item" href="{% url 'compa'%}">ComTIA A+</a></li>
+                    <li><a class="dropdown-item" href="{% url 'phpfullstack'%}">PHP Fullstack</a></li>
+                    <li><a class="dropdown-item" href="{% url 'pythonfullstack'%}">Python and Django Fullstack <br> Web Development</a></li>
+                      </div>
+  
+                      <div class="col-lg-4 px-3">
+                        <h6 class="">Networking</h6>
+                        <div class=" underline"></div>
+                    <li><a class="dropdown-item" href="{% url 'wsa'%}">Windows Server Administration</a></li>
+                    <li><a class="dropdown-item" href="{% url 'compnet'%}">ComTIA Network+</a></li>
+                    <li><a class="dropdown-item" href="{% url 'redhat'%}">Redhat Certified Enginer</a></li>
+                    <li><a class="dropdown-item" href="{% url 'az'%}">AZ 104 Microsoft Azure <br>Administration Exam</a></li>
+                      </div>
+  
+                      <div class="col-lg-4 px-3">
+                        <h6 class="">Software</h6>
+                        <div class=" underline"></div>
+                    <li><a class="dropdown-item" href="{% url 'coursedigital'%}">Digital Marketing</a></li>
+                    <li><a class="dropdown-item" href="{% url 'vmsphere'%}">Vmware Vsphere</a></li>
+                    <li><a class="dropdown-item" href="{% url 'ciso'%}">cisco Certified Network Associate</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                
+
+                
+
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary px-3" href="{% url 'placements'%}"><b>placement</b></a>
+                </li>
+                <li class="nav-item">
+                  <a href="{% url 'contactus'%}" class="contact px-3"><b>contact us<b></a>
+                </li>          
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+</div>
+
+<div class="div  py-5" id="div1">
+  <div class="row">
+     <div class="col-lg-2">
+       <div class="container">
+         <h6 class="socialmedia-sticky"><b>Follow Us</b>
+             <a href="" target="_blank"><img src="{% static 'image/facebook.png'%}" class="media "><i class="fab fa-facebook-f"></i></a> /
+             <a href="" target="_blank"><img src="{% static 'image/twitter.png'%}" class="media "><i class="fab fa-twitter"></i></a> /
+             <a href="" target="_blank"><img src="{% static 'image/in.png'%}" class="media "><i class="fab fa-linkedin-in"></i></a> /
+             <a href="" target="_blank"><img src="{% static 'image/insta.png'%}" class="media "><i class="fab fa-instagram"></i></a>
+         </h6>
+       </div>
+     </div>
+   </div>
+  </div>
+     
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h1 class="heading-blog text-center">Blog</h1>
+      </div>
+    </div>
+    <div class="row pt-5">
+      <div class="col-lg-8 pe-5">
+        <h2>Master the Art of Digital Marketing: Synnefo Solutions Offers Comprehensive eLearning Courses</h2>
+        <h6 class="datecon text-center"><font>Posted on:April 20, 2023</font></h6>
+        <p class="blog-para">If you’re looking to master the art of digital marketing, look no further than Synnefo Solutions – the best eLearning institute in Kochi. With comprehensive and cutting-edge courses, Synnefo Solutions is your one-stop destination for gaining the skills and knowledge needed to excel in the ever-evolving field of digital marketing.</p>
+
+        <p class="blog-para"> 
+            As businesses increasingly rely on digital channels to connect with customers, the demand for skilled digital marketers has skyrocketed. From search engine optimization (SEO) to social media marketing, content creation to email marketing, there are numerous facets to digital marketing that require specialized skills. Synnefo Solutions understands this and offers a wide range of eLearning courses designed to equip you with the expertise needed to thrive in this dynamic industry.</p>
+
+          
+          <p class="blog-para"> What sets Synnefo Solutions apart as the best eLearning institute in Kochi? Here are some key highlights:</p>
+
+          <p class="blog-para"> Comprehensive Curriculum: Synnefo Solutions offers a comprehensive curriculum that covers all aspects of digital marketing. From the fundamentals to advanced strategies, you’ll gain a solid foundation and in-depth knowledge of digital marketing practices.</p>
+          
+          <p class="blog-para"> 
+            Expert-led Training: Synnefo Solutions boasts a team of experienced instructors who are industry experts in digital marketing. They bring real-world experience to the virtual classroom, providing practical insights and hands-on training to help you apply concepts in real-world scenarios. </p>
+         
+          <p class="blog-para">Cutting-edge Tools and Techniques: Digital marketing is a constantly evolving field, with new tools, techniques, and strategies emerging regularly. Synnefo Solutions ensures that its courses are up-to-date with the latest industry trends, equipping you with the most relevant and effective strategies to stay ahead of the competition.</p>
+         
+         <p class="blog-para">Flexible Learning Options: Synnefo Solutions understands the need for flexibility in today’s fast-paced world. Their eLearning courses are designed to be self-paced, allowing you to learn at your own convenience and schedule. You can access course materials anytime, anywhere, making it convenient for working professionals or those with busy schedules.</p>
+        
+         <p class="blog-para">Practical Assignments and Projects: Synnefo Solutions believes in a hands-on approach to learning. Their courses include practical assignments and projects that allow you to apply the concepts learned in a real-world setting. This helps you develop practical skills and gain confidence in your abilities as a digital marketer.</p>
+         
+         <p class="blog-para">
+            Certification: Upon successful completion of the courses, Synnefo Solutions provides industry-recognized certifications that can boost your resume and enhance your credibility as a digital marketing professional.</p>
+         
+         <p class="blog-para">Whether you’re a beginner looking to start your digital marketing journey or an experienced marketer looking to upgrade your skills, Synnefo Solutions’ comprehensive eLearning courses are tailored to meet your needs. With their expert-led training, cutting-edge tools and techniques, flexible learning options, and practical assignments, you can master the art of digital marketing and take your career to new heights.</p>
+        <p class="blog-para">Don’t miss out on the opportunity to learn from the best eLearning institute in Kochi. Enroll in Synnefo Solutions’ digital marketing courses today and unlock your full potential as a digital marketing expert.</p>
+      </div>
+      <div class="col-lg-4">
+        <img src="{% static 'image/digital-marketing.jpg'%}" width="350" height="250" class="blog-image">
+        <h3 class="pt-5 ">Recent Posts</h3>
+        <div class="div underline"></div>
+        <p class="pt-3"><a href="{% url 'softwareblog'%}" class="blog-link">Software Development: Exploring DevOps</a></p>
+        <div calss="div dotted-line"></div>
+        
+        <p class="pt-3"><a href="{% url 'cloudblog'%}" class="blog-link">Start Your Cloud Journey with AWS for Absolute Beginners: Synnefo Solutions Has You Covered</a></p>
+        <div calss="div dotted-line"></div>
+
+        
+        <p class="pt-3"><a href="{% url 'digitalmarketing'%}" class="blog-linkk">Master the Art of Digital Marketing: Synnefo Solutions Offers Comprehensive eLearning Courses</a></p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="div menu1">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-10">
+              <div class="onlinecourse-wrapper">
+                  <div class="row  menu-back">
+                      <div class="col-lg-8 col-md-8">
+                          <h4> <img src="{% static 'image/learning-course-icon.webp'%}">Best Learning Platform </h4>
+                            <h6 class="ps-3">Study with the best certified professional teachers.</h6>
+                      </div>
+                      <div class="col-lg-4 col-md-4">
+                          <a href="https://synnefo.in/2023/05/24/devops-training-in-kochi//contact-us/" class="registerbtn ">Register Now</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row pt-5">
+          <div class="col-lg-3 ">
+              <img src="{% static 'image/synnefo-logo.png'%}" alt="Synnefo Logo">
+  
+          </div>
+          <div class="col-lg-3 col-md-4 ">
+              <h3>Quick Links</h3>
+              <div class="menu-quick-links-container">
+                <ul id="menu-quick-links" class="menu">
+                  <li class="list py-1"><a href="{% url 'home'%}" class="menu">Home</a></li>
+                  <li class="list  py-1"><a href="{% url 'aboutus'%}" class="menu">About Us</a></li>
+                  <li class="list  py-1"><a href="{% url 'courses'%}" class="menu">Courses</a></li>
+                  <li class="list  py-1"><a href="{% url 'placements'%}" class="menu">Placements</a></li>
+                 <li class="list  py-1"><a href="{% url 'blog'%}" aria-current="page" class="menu">Blog</a></li>
+                 <li class="list  py-1"><a href="{% url 'success'%}" class="menu">Success Stories</a></li>
+                <li class="list  py-1"><a href="{% url 'carrers'%}" class="menu">Careers</a></li>
+               <li class="list  py-1"><a href="{% url 'contactus'%}" class="menu">Contact Us</a></li>
+                </ul>
+              </div>                
+               </div>
+               <div class="col-lg-3 col-md-4">
+                <h3>Popular Courses</h3>
+                <div class="menu-popular-courses-container">
+                  <ul id="menu-popular-courses">
+                    <li class="list py-1"><a href="{% url 'coursedigital'%}" class="menu">Digital Marketing</a></li>
+                   <li class="list py-1"><a href="{% url 'phpfullstack'%}"  class="menu">PHP  Full Stack</a></li>
+                   <li class="list py-1"><a href="{% url 'vmsphere'%}" class="menu">Vmware vSphere</a></li>
+              <li class="list py-1"><a href="{% url 'ciso'%}" class="menu">Cisco Certified Network Associate</a></li>
+             <li class="list py-1"><a href="{% url 'compa'%}" class="menu">CompTIA A+</a></li>
+          </ul>
+      </div>  
+      </div>
+          <div class="col-lg-3 col-md-4">
+              <h3>Get in Touch</h3>
+              <p class="list" id="para">2nd Floor, Aswathi Building Above SBI,<br>
+                  Iyyattil Junction, Ernakulam,<br>
+                  Kerala 682011</p>
+              <p ><a href="tel:+917736013410" class="menu py-1">+91 7736013410</a></p>
+              <p ><a href="tel:+917736013411" class="menu py-1">+91 7736013411</a></p>
+              <p ><a href="mailto:info@synnefo.in" class="menu py-1">info@synnefo.in</a></p>
+            
+          </div>
+      </div>
+  </div>
+  <div class="div copy-back">
+    <div class="row">
+      <div class="col-lg-8 col-md-6" >
+    <p class="px-5"> Copyright © 2023 Synnefo Solutions. All rights reserved.</p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <p> <a href="" class=" copy-a px-5">Privacy Policy </a> <a href="" class="copy-a">Terms & Conditions </a> </p>
+      </div>
+    </div>
+  </div>
+  </div>

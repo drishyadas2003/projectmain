@@ -1,0 +1,426 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    {% load static %}
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'css/coursedigital.css'%}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>courses</title>
+  </head>
+  <body>
+
+    <a href="https://api.whatsapp.com/send?phone=+917736013410&amp;text=Hello" target="_blank" class="whatsapp-iconbtn"><i class="fab fa-whatsapp"></i></a>
+    
+    <div class="div div1">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+      
+              <a class="navbar-brand " href="#">
+                <h6 class="navclr"><b> <img src="{% static 'image/phone.png.png'%}" class="phone">+91 7736013411</b></h6></a>
+            
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item ">
+                    <a class="nav-link active px-3" id="navclr" aria-current="page" href="{% url 'blog' %}"><b>Blog</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navclr px-3" href="{% url 'carrers' %}"><b>Careers</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link navclr px-3 " href="{% url 'success' %}"><b>Success stories</b></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link w-100"id="navcl" href="{% url 'contactus'%}"><b>Register now</b></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <li class="nav-item">
+                    </li>
+                    
+                </ul>
+              
+              </div>
+            </div>
+          </nav>
+    </div>
+
+    
+    
+<div class="div">
+    <nav class="navbar navbar-expand-lg navbar-light ">
+        <div class="container">
+  
+            <img src="{% static 'image/synnefo-logo.png'%}" alt="logo">
+    
+            <ul class="nav justify-content-center">
+                <li class="nav-item ">
+                  <a class="nav-link active text-secondary px-3" aria-current="page" href="{% url 'aboutus'%}"><b>About us</b></a>
+                </li>
+                <li class="nav-item dropdown ">
+                  <a class="nav-link dropdown-toggle text-secondary px-3" href="{% url 'courses'%}" id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false"><b>
+                    Courses</b>
+                  </a>
+    
+
+                  <ul class="dropdown-menu dropdown-menu-light" id="nav3" aria-labelledby="navbarDarkDropdownMenuLink">
+                    <div class="row ">
+                      <div class="col-lg-4 ">
+                        <h6 class=" px-2">Digital marketing</h6>
+                        <div class=" underline"></div>
+                    <li><a class="dropdown-item" href="{% url 'aws'%}">AWS For Absolute Beginers</a></li>
+                    <li><a class="dropdown-item" href="{% url 'compa'%}">ComTIA A+</a></li>
+                    <li><a class="dropdown-item" href="{% url 'phpfullstack'%}">PHP Fullstack</a></li>
+                    <li><a class="dropdown-item" href="{% url 'pythonfullstack'%}">Python and Django Fullstack <br> Web Development</a></li>
+                      </div>
+  
+                      <div class="col-lg-4 px-3">
+                        <h6 class="">Networking</h6>
+                        <div class=" underline"></div>
+                    <li><a class="dropdown-item" href="{% url 'wsa'%}">Windows Server Administration</a></li>
+                    <li><a class="dropdown-item" href="{% url 'compnet'%}">ComTIA Network+</a></li>
+                    <li><a class="dropdown-item" href="{% url 'redhat'%}">Redhat Certified Enginer</a></li>
+                    <li><a class="dropdown-item" href="{% url 'az'%}">AZ 104 Microsoft Azure <br>Administration Exam</a></li>
+                      </div>
+  
+                      <div class="col-lg-4 px-3">
+                        <h6 class="">Software</h6>
+                        <div class=" underline"></div>
+                    <li><a class="dropdown-item" href="{% url 'coursedigital'%}">Digital Marketing</a></li>
+                    <li><a class="dropdown-item" href="{% url 'vmsphere'%}">Vmware Vsphere</a></li>
+                    <li><a class="dropdown-item" href="{% url 'ciso'%}">cisco Certified Network Associate</a></li>
+                      </div>
+                    </div>
+                  </ul>
+                
+                
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-secondary px-3" href="#"><b>placement</b></a>
+                </li>
+                <li class="nav-item">
+                  <a href="" class="contact px-3"><b>contact us<b></a>
+                </li>          
+            </ul>
+          
+          </div>
+        </div>
+      </nav>
+</div>
+
+  
+  <div class="div  py-5" id="div1">
+    <div class="row">
+       <div class="col-lg-2">
+         <div class="container">
+           <h6 class="socialmedia-sticky text-secondary"><b>Follow Us</b>
+               <a href="" target="_blank"><i class="fab fa-facebook-f text-secondary"></i></a> /
+               <a href="" target="_blank"><i class="fab fa-twitter text-secondary"></i></a> /
+               <a href="" target="_blank"><i class="fab fa-linkedin-in text-secondary"></i></a> /
+               <a href="" target="_blank"><i class="fab fa-instagram text-secondary"></i></a>
+           </h6>
+         </div>
+       </div>
+     </div>
+    </div>
+
+  </div>
+
+
+
+  <div class="container">
+     <div class="row">
+         <div class="col-lg-12">
+              <h6 class="heading-careers text-center">Courses</h6>
+         </div>
+     </div>
+     <div class="row">
+        <div class="col-lg-7">
+            <h4>Digital Marketing</h4>
+            <p class="careers-para"> Digital Marketing Training In Kochi, offers a comprehensive “Digital Marketing” course designed for individuals seeking to enter or enhance their skills in the dynamic field of digital marketing. With a focus on practical learning and industry-relevant skills, this course covers various aspects of digital marketing, including SEO, SMM, PPC, email marketing, and more. Led by experienced instructors and optimized for the Kochi region, this course provides hands-on learning through exercises, case studies, and real-world examples. Join us at Synnefo Solutions to gain the skills needed to excel in the fast-paced world of digital marketing.
+
+                <p>
+
+            <div class="course-view">
+              <div class="ulli pt-2 ps-3">
+                <ul class="nav-pills">
+                    <li class="nt"><a href="#tab1" class="nv ">Course Overview</a></li>
+                    <li class="nt"><a href="#tab2" class="nv ">Course Topic</a></li>
+                    <li class="nt"><a href="#tab3" class="nv "> Batch Schedule</a></li>
+                  </ul>
+                </div>
+
+                <div class="tab-content" id="tab1">
+                    
+                    <p class="careers-para">Synnefo Solutions offers an extensive “Digital Marketing” course in Kochi, designed to provide students with a comprehensive understanding of the dynamic field of digital marketing. With a focus on practical learning and industry-relevant skills, this course is ideal for individuals looking to enter the exciting world of digital marketing or enhance their existing skills in the field.
+
+                        In this course, students will learn various aspects of digital marketing, including search engine optimization (SEO), social media marketing (SMM), pay-per-click (PPC) advertising, email marketing, content marketing, web analytics, and more. They will also gain insights into developing effective digital marketing strategies, understanding customer behavior, and analyzing data to measure campaign performance. Through hands-on exercises, case studies, and real-world examples, students will acquire practical skills that can be applied in real-world marketing scenarios.
+                        
+                        Our experienced instructors, optimized course content for the Kochi region, and focus on hands-on learning make the “Digital Marketing” course at Synnefo Solutions a top choice for individuals looking to excel in the field of digital marketing. Join us today and gain the skills needed to thrive in the fast-paced and ever-evolving world of digital marketing.                        
+                        </p>
+                  </div>
+
+                  <div class="tab-content" id="tab2" style="display: none;">
+            
+                    <p class="careers-para">The “Digital Marketing” course at Synnefo Solutions covers a wide range of topics to provide students with a comprehensive understanding of the field. Some of the key course topics include:
+
+                        Search Engine Optimization (SEO): Understanding the principles of SEO, keyword research, on-page and off-page optimization, and measuring SEO performance.
+                        Social Media Marketing (SMM): Creating effective social media strategies, managing social media accounts, optimizing social media campaigns, and measuring social media performance.
+                        Pay-Per-Click (PPC) Advertising: Creating and managing PPC campaigns on platforms such as Google Ads and Facebook Ads, optimizing ad performance, and analyzing campaign data.
+                        Email Marketing: Creating and managing email marketing campaigns, crafting effective email content, optimizing email campaigns, and measuring email performance.
+                        Content Marketing: Developing content marketing strategies, creating compelling content, distributing content through various channels, and measuring content marketing success.
+                        Web Analytics: Understanding web analytics tools, interpreting data, analyzing website performance, and optimizing digital marketing strategies based on data insights.
+                        Digital Marketing Strategy: Developing comprehensive digital marketing strategies, understanding customer behavior, targeting and segmenting audiences, and creating data-driven marketing plans.
+                        Digital Advertising: Understanding different types of digital advertising, creating and managing display ads, video ads, and native ads, and optimizing advertising campaigns.
+                        Online Reputation Management: Monitoring and managing online reputation, handling customer reviews and feedback, and developing strategies to maintain a positive brand image online.
+                        Through a combination of theoretical concepts, practical exercises, and real-world case studies, the “Digital Marketing” course at Synnefo Solutions equips students with the skills needed to excel in the ever-evolving field of digital marketing.</p>
+                  </div>
+
+
+
+                  <div class="tab-content" id="tab3" style="display: none;">
+                    
+                    <p class="careers-para">Training Type
+                        Class room online corporate
+                        
+                        Batch Timings
+                        Weekdays (Monday to Friday)
+                        Early Morning (7:30Am to 9:30Am), (7:30Am to 10:30Am)
+                        Morning (9:00Am to 12:00Pm)
+                        Afternoon (12:00Pm to 03:00Pm)
+                        Evening (3:30Pm to 5:30Pm), (3:00Pm to 06:00Pm)
+                        
+                        Weekend
+                        Saturday/Sunday (7:30Am to 3:00Pm), (9:00Am to 05:00Pm)
+                        
+                        Fastrack
+                        Based on candidate’s Requirement.
+                        
+                        For latest training schedule, please contact +917736013411 or email info@synnefo.in</p>
+                  </div>
+
+                   
+                  <script>
+                    // JavaScript to handle tab switching
+                    document.querySelectorAll('.nv').forEach(function (tab) {
+                      tab.addEventListener('click', function (event) {
+                        event.preventDefault();
+                
+                        // Hide all tab content
+                        document.querySelectorAll('.tab-content').forEach(function (content) {
+                          content.style.display = 'none';
+                        });
+                
+                        // Show the selected tab content
+                        const targetId = this.getAttribute('href').substring(1);
+                        document.getElementById(targetId).style.display = 'block';
+                      });
+                    });
+                  </script>
+            </div>
+        </div>
+
+      <div class="col-lg-4">
+        <img src="{% static 'image/digital-marketing.webp'%}" class="dimg" width="400" height="300" >
+
+        <div class="dform">
+            <form>
+                <h3 class="text-center pt-4">ENQUIRY</h>
+                    <p class="careers-para text-center">Please fill out the form below and we will get<br>
+                      back to you shortly.</p>
+                      <div class="container">
+                        <div class="row py-2">
+                            <div class="col-lg-12">
+                                <input type="text" class="form-control" id="formyourname" placeholder="Your name">
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-lg-12">
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-lg-12">
+                                <input type="text" class="form-control" id="formyourname" placeholder="phone">
+                            </div>
+                        </div>
+
+                        <div class="row py-2">
+                            <div class="col-lg-12">
+                                <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="message" rows="4"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="row py-2 mx-auto pe-2">
+                            <div class="col-lg-12">
+                                <button class="btn form-control text-center" id="submit" type="button">Submit</button>
+                            </div>
+                        </div>
+
+                      </div>
+            </form>
+        </div>
+
+      </div>
+     </div>
+
+     <!-- container-->
+  </div>
+
+  <div class="container">
+     <div class="row">
+        <div class="col-lg-12">
+            <h6 class="heading-careers text-center pt-5">Placements</h6>
+            <div class="cir text-center">
+                <div id="ball1" class="circle"></div>
+                <div id="ball2" class="circle"></div>
+                <div id="ball3" class="circle"></div>
+              <div>
+
+                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <div class="div  placement-div">
+                            <div class="div img-bgp py-3"> <img src="{% static 'image/profile-bg.jpg'%}" class="placement-bg"></div>
+                            <h5 class="text-center">Manoj K A</h5>
+                            <p class="careers-para text-center">Digital Marketing</p>
+                            <div class="line"></div>
+                            <p class="careers-paraa text-center">placed in</p>
+                            <h6 class="text-center">Company name here</h6>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="div  placement-div">
+                            <div class="div img-bgp py-3"> <img src="{% static 'image/profile-bg.jpg'%}" class="placement-bg"></div>
+                            <h5 class="text-center">Manoj K </h5>
+                            <p class="careers-para text-center">Digital Marketing</p>
+                            <div class="line"></div>
+                            <p class="careers-paraa text-center">placed in</p>
+                            <h6 class="text-center">Company name here</h6>
+                         </div>
+                      </div>
+                      <div class="carousel-item">
+                        <div class="div  placement-div">
+                            <div class="div img-bgp py-3"> <img src="{% static 'image/profile-bg.jpg'%}" class="placement-bg"></div>
+                            <h5 class="text-center">Manoj  A</h5>
+                            <p class="careers-para text-center">Digital Marketing</p>
+                            <div class="line"></div>
+                            <p class="careers-paraa text-center">placed in</p>
+                            <h6 class="text-center">Company name here</h6>
+                         </div>
+                      </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+        </div>
+      </div>
+
+  </div>
+
+
+
+
+  
+  
+   
+<div class="div menu1">
+    <div class="container">
+      <div class="row justify-content-center">
+          <div class="col-lg-10">
+              <div class="onlinecourse-wrapper">
+                  <div class="row  menu-back">
+                      <div class="col-lg-8 col-md-8">
+                          <h4> <img src="{% static 'image/learning-course-icon.webp' %}">Best Learning Platform </h4>
+                            <h6 class="ps-3">Study with the best certified professional teachers.</h6>
+                      </div>
+                      <div class="col-lg-4 col-md-4 rgbtn">
+                          <a href="{% url 'contactus'%}" class="registerbtn ">Register Now</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="row pt-5">
+          <div class="col-lg-3 ">
+              <img src="{% static 'image/synnefo-logo.png'%}" alt="Synnefo Logo">
+  
+          </div>
+          <div class="col-lg-3 col-md-4 ">
+              <h3>Quick Links</h3>
+              <div class="menu-quick-links-container">
+                <ul id="menu-quick-links" class="menu">
+                    <li class="list py-1"><a href="{% url 'home'%}" class="menu">Home</a></li>
+                    <li class="list  py-1"><a href="{% url 'aboutus'%}" class="menu">About Us</a></li>
+                    <li class="list  py-1"><a href="{% url 'courses'%}" class="menu">Courses</a></li>
+                    <li class="list  py-1"><a href="{% url 'placements'%}" class="menu">Placements</a></li>
+                   <li class="list  py-1"><a href="{% url 'blog'%}" aria-current="page" class="menu">Blog</a></li>
+                   <li class="list  py-1"><a href="{% url 'success'%}" class="menu">Success Stories</a></li>
+                  <li class="list  py-1"><a href="{% url 'carrers'%}" class="menu">Careers</a></li>
+                 <li class="list  py-1"><a href="{% url 'contactus'%}" class="menu">Contact Us</a></li>
+                  </ul>
+                </div>                
+                 </div>
+                 <div class="col-lg-3 col-md-4">
+                  <h3>Popular Courses</h3>
+                  <div class="menu-popular-courses-container">
+                    <ul id="menu-popular-courses">
+                      <li class="list py-1"><a href="{% url 'coursedigital'%}" class="menu">Digital Marketing</a></li>
+                     <li class="list py-1"><a href="{% url 'phpfullstack'%}"  class="menu">PHP  Full Stack</a></li>
+                     <li class="list py-1"><a href="{% url 'vmsphere'%}" class="menu">Vmware vSphere</a></li>
+                <li class="list py-1"><a href="{% url 'ciso'%}" class="menu">Cisco Certified Network Associate</a></li>
+               <li class="list py-1"><a href="{% url 'compa'%}" class="menu">CompTIA A+</a></li>
+            </ul>
+      </div>  
+      </div>
+          <div class="col-lg-3 col-md-4">
+              <h3>Get in Touch</h3>
+              <p class="list" id="para">2nd Floor, Aswathi Building Above SBI,<br>
+                  Iyyattil Junction, Ernakulam,<br>
+                  Kerala 682011</p>
+              <p ><a href="tel:+917736013410" class="menu py-1">+91 7736013410</a></p>
+              <p ><a href="tel:+917736013411" class="menu py-1">+91 7736013411</a></p>
+              <p ><a href="mailto:info@synnefo.in" class="menu py-1">info@synnefo.in</a></p>
+             
+          </div>
+      </div>
+  </div>
+  <div class="div copy-back">
+    <div class="row">
+      <div class="col-lg-8 col-md-6" >
+    <p class="px-5"> Copyright © 2023 Synnefo Solutions. All rights reserved.</p>
+      </div>
+      <div class="col-lg-4 col-md-6">
+        <p> <a href="" class=" copy-a px-5">Privacy Policy </a> <a href="" class="copy-a">Terms & Conditions </a> </p>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
